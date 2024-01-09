@@ -1,9 +1,22 @@
-"use strict";
 
-const sum=1000000
-// console.log(sum.toFixed(2));
-// console.log(sum.toPrecision(3));
-// console.log(sum.toLocaleString('en-IN'));
-const min=1
-const max=6
-console.log(Math.floor(Math.random()*(max-min))+1)
+
+
+//const arr=["sumit","anil","ekta","urmila"]
+
+
+const obj={
+    in:"India",
+    us:"United states",
+    fr:"France"
+}
+
+
+const arr=[
+{name:"sumit", fname:"anil",price:100}, 
+{name:"nitin", fname:"sanjay",price:1200}, 
+{name:"mukku", fname:"manish",price:5100},
+{name:"sumit",favrt:"kk",price:3200}]
+
+let newarr= arr.reduce( (acc,item)=>acc+item.price,0 )
+
+console.log(newarr);
