@@ -1,22 +1,11 @@
-
-
-
-//const arr=["sumit","anil","ekta","urmila"]
-
-
-const obj={
-    in:"India",
-    us:"United states",
-    fr:"France"
+function hello(){
+    console.log("inside the hello");
 }
 
+function demo(){
+    console.log("inside the demo");
+    hello();
+}
 
-const arr=[
-{name:"sumit", fname:"anil",price:100}, 
-{name:"nitin", fname:"sanjay",price:1200}, 
-{name:"mukku", fname:"manish",price:5100},
-{name:"sumit",favrt:"kk",price:3200}]
-
-let newarr= arr.reduce( (acc,item)=>acc+item.price,0 )
-
-console.log(newarr);
+console.log(("outside"));
+demo();
